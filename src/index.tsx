@@ -7,14 +7,14 @@ const app = new Hono()
 app.use('/static/*', serveStatic({ root: './' }))
 
 // ─── Shared Layout ────────────────────────────────────────────────────────────
-const Layout = ({ children, title = 'Ipswich Web Design Agency | Pixel & Craft' }: { children: any; title?: string }) => `
+const Layout = ({ children, title = 'Ipswich Web Design Agency | Obsidian Digital' }: { children: any; title?: string }) => `
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${title}</title>
-  <meta name="description" content="Award-winning web design agency based in Ipswich, Suffolk. We create stunning, high-converting websites that grow your business." />
+  <meta name="description" content="Obsidian Digital — a web design agency based in Ipswich, Suffolk. We create stunning, high-converting websites that grow your business." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -223,7 +223,7 @@ const Navbar = () => `
             <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
           </svg>
         </div>
-        <span class="font-display font-bold text-xl text-white tracking-tight">Pixel<span class="gradient-text">&</span>Craft</span>
+        <span class="font-display font-bold text-xl text-white tracking-tight">Obsidian<span class="gradient-text"> Digital</span></span>
       </a>
 
       <!-- Desktop Nav -->
@@ -281,10 +281,10 @@ const Footer = () => `
               <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
             </svg>
           </div>
-          <span class="font-display font-bold text-xl text-white tracking-tight">Pixel<span class="gradient-text">&</span>Craft</span>
+          <span class="font-display font-bold text-xl text-white tracking-tight">Obsidian<span class="gradient-text"> Digital</span></span>
         </a>
         <p class="text-gray-400 text-sm leading-relaxed max-w-xs">
-          Award-winning web design agency based in Ipswich, Suffolk. We craft digital experiences that convert visitors into customers.
+          Obsidian Digital — a web design agency based in Ipswich, Suffolk. We craft digital experiences that convert visitors into customers.
         </p>
         <div class="flex gap-4 mt-6">
           <a href="#" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-brand-600 flex items-center justify-center text-gray-400 hover:text-white transition-all duration-200">
@@ -324,13 +324,13 @@ const Footer = () => `
         <div class="mt-6 p-4 rounded-xl bg-white/3 border border-white/5">
           <p class="text-gray-400 text-xs">📍 Ipswich, Suffolk</p>
           <p class="text-gray-400 text-xs mt-1">📞 01473 000 000</p>
-          <p class="text-gray-400 text-xs mt-1">✉️ hello@pixelandcraft.co.uk</p>
+          <p class="text-gray-400 text-xs mt-1">✉️ riaz.darwinboyd@gmail.com</p>
         </div>
       </div>
     </div>
 
     <div class="border-t border-white/5 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p class="text-gray-500 text-sm">© 2024 Pixel & Craft. All rights reserved.</p>
+      <p class="text-gray-500 text-sm">© 2024 Obsidian Digital. All rights reserved.</p>
       <p class="text-gray-500 text-sm">Proudly designed & built in <span class="text-brand-400">Ipswich, Suffolk</span> 🏴󠁧󠁢󠁥󠁮󠁧󠁿</p>
     </div>
   </div>
@@ -658,8 +658,8 @@ const HomePage = () => `
 
     <div class="grid md:grid-cols-3 gap-7">
       ${[
-        { quote: 'Pixel & Craft completely transformed our online presence. Within 3 months of our new website launching, our enquiries had more than tripled. Absolutely phenomenal work.', name: 'Sarah Mitchell', role: 'Director, OrwellHomes', stars: 5 },
-        { quote: 'I was blown away by the quality of the design and how quickly they understood our brand. The team are professional, creative, and genuinely care about results.', name: 'James Thornton', role: 'Owner, CraftBrew Co.', stars: 5 },
+        { quote: 'Obsidian Digital completely transformed our online presence. Within 3 months of our new website launching, our enquiries had more than tripled. Absolutely phenomenal work.', name: 'Sarah Mitchell', role: 'Director, OrwellHomes', stars: 5 },
+        { quote: 'I was blown away by the quality of the design and how quickly Riaz understood our brand. Professional, creative, and genuinely cares about results. Would recommend to anyone.', name: 'James Thornton', role: 'Owner, CraftBrew Co.', stars: 5 },
         { quote: 'Our new website looks incredible and performs even better. Our Google rankings shot up and we\'re getting far more qualified leads than ever before. Highly recommend!', name: 'Emma Richards', role: 'Partner, SuffolkLaw', stars: 5 },
       ].map((t, i) => `
         <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm card-hover animate-on-scroll" style="animation-delay: ${i * 100}ms">
@@ -721,13 +721,13 @@ const AboutPage = () => `
   </div>
   <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 text-center">
     <div class="inline-flex items-center gap-2 tag-pill rounded-full px-4 py-2 mb-7">
-      <span class="text-brand-300 text-sm font-medium">About Pixel & Craft</span>
+      <span class="text-brand-300 text-sm font-medium">About Obsidian Digital</span>
     </div>
     <h1 class="font-display font-extrabold text-5xl lg:text-6xl text-white leading-tight mb-6 tracking-tight">
       We're a Creative Agency <br class="hidden md:block"/><span class="gradient-text">With a Purpose</span>
     </h1>
     <p class="text-gray-400 text-xl max-w-2xl mx-auto">
-      Founded in Ipswich, we've spent 8 years helping local businesses and national brands build their digital future — one pixel at a time.
+      Founded in Ipswich by a Computer Science student with a passion for design — building digital experiences that actually move the needle for local businesses.
     </p>
   </div>
   <div class="absolute bottom-0 left-0 right-0">
@@ -746,16 +746,16 @@ const AboutPage = () => `
           <span class="text-brand-600 text-sm font-medium">Our Story</span>
         </div>
         <h2 class="font-display font-extrabold text-4xl text-gray-900 mb-6 tracking-tight leading-tight">
-          Born in Ipswich, <span class="gradient-text">Built for Growth</span>
+          Built in Ipswich, <span class="gradient-text">Driven by Passion</span>
         </h2>
         <p class="text-gray-500 leading-relaxed mb-5">
-          Pixel & Craft was founded in 2016 by two designers who were frustrated with the cookie-cutter websites being sold to local businesses. We believed — and still believe — that every business deserves a website that truly represents them and actively drives growth.
+          Obsidian Digital was founded by Riaz Darwin-Boyd, a Computer Science student based in Ipswich with a genuine passion for design, code, and building things that work. Frustrated by the overpriced, generic websites being sold to local businesses, Riaz set out to offer something better — websites that are beautifully crafted, technically sharp, and built to convert.
         </p>
         <p class="text-gray-500 leading-relaxed mb-5">
-          What started as a two-person studio in a shared office on Tavern Street has grown into a full-service digital agency with a team of 8 specialists covering design, development, SEO, and brand strategy.
+          Combining academic knowledge in computer science with hands-on real-world projects, Obsidian Digital brings a fresh, modern perspective to web design. Every project gets the same level of care, precision and attention to detail — whether it's a portfolio site or a full e-commerce store.
         </p>
         <p class="text-gray-500 leading-relaxed mb-8">
-          We're proud to call Ipswich home, and even prouder of the businesses we've helped grow here in Suffolk and beyond.
+          Proudly Ipswich-based and passionate about helping local Suffolk businesses thrive online. If you want a website that genuinely works for your business, you're in the right place.
         </p>
         <a href="/contact" class="btn-primary inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-xl">
           Work With Us <i class="fas fa-arrow-right text-sm"></i>
@@ -769,8 +769,8 @@ const AboutPage = () => `
           <div class="relative bg-white rounded-3xl border border-gray-100 shadow-xl overflow-hidden p-8">
             <div class="grid grid-cols-2 gap-4 mb-4">
               <div class="bg-gradient-to-br from-brand-500 to-purple-600 rounded-2xl h-36 flex flex-col items-center justify-center text-white">
-                <span class="font-display font-extrabold text-4xl">8</span>
-                <span class="text-sm opacity-80">Years</span>
+                <span class="font-display font-extrabold text-4xl">CS</span>
+                <span class="text-sm opacity-80">Graduate</span>
               </div>
               <div class="bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl h-36 flex flex-col items-center justify-center text-white">
                 <span class="font-display font-extrabold text-4xl">50+</span>
@@ -848,10 +848,10 @@ const AboutPage = () => `
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
       ${[
-        { name: 'Alex Turner', role: 'Founder & Creative Director', color: 'from-brand-400 to-purple-500', icon: 'fa-user-tie', skills: ['Brand Strategy', 'UI Design', 'Direction'] },
-        { name: 'Priya Sharma', role: 'Lead Web Developer', color: 'from-cyan-400 to-blue-500', icon: 'fa-laptop-code', skills: ['React', 'TypeScript', 'Performance'] },
-        { name: 'Tom Hawkins', role: 'UX Designer', color: 'from-pink-400 to-rose-500', icon: 'fa-pen-ruler', skills: ['User Research', 'Figma', 'Prototyping'] },
-        { name: 'Jess Collins', role: 'SEO & Growth Manager', color: 'from-green-400 to-emerald-500', icon: 'fa-magnifying-glass-chart', skills: ['SEO', 'Analytics', 'PPC'] },
+        { name: 'Riaz Darwin-Boyd', role: 'Founder & Lead Developer', color: 'from-brand-400 to-purple-500', icon: 'fa-laptop-code', skills: ['Web Design', 'TypeScript', 'React'] },
+        { name: 'Creative Direction', role: 'UI & Visual Design', color: 'from-pink-400 to-rose-500', icon: 'fa-pen-ruler', skills: ['Figma', 'Branding', 'Prototyping'] },
+        { name: 'Development', role: 'Build & Performance', color: 'from-cyan-400 to-blue-500', icon: 'fa-code', skills: ['Performance', 'SEO', 'Accessibility'] },
+        { name: 'Growth', role: 'SEO & Digital Marketing', color: 'from-green-400 to-emerald-500', icon: 'fa-magnifying-glass-chart', skills: ['SEO', 'Analytics', 'Conversions'] },
       ].map((m, i) => `
         <div class="group card-hover text-center animate-on-scroll" style="animation-delay: ${i * 80}ms">
           <div class="w-24 h-24 mx-auto bg-gradient-to-br ${m.color} rounded-2xl flex items-center justify-center mb-5 shadow-lg group-hover:shadow-xl transition-shadow">
@@ -877,7 +877,7 @@ const AboutPage = () => `
           <span class="text-brand-600 text-sm font-medium">Why Choose Us</span>
         </div>
         <h2 class="font-display font-extrabold text-4xl text-gray-900 mb-8 tracking-tight leading-tight">
-          The Pixel & Craft <span class="gradient-text">Difference</span>
+          The Obsidian Digital <span class="gradient-text">Difference</span>
         </h2>
         <div class="space-y-5">
           ${[
@@ -976,7 +976,7 @@ const ContactPage = () => `
 
         ${[
           { icon: 'fa-phone', color: 'bg-brand-50 text-brand-600', title: 'Phone', val: '01473 000 000', sub: 'Mon – Fri, 9am – 5:30pm', href: 'tel:01473000000' },
-          { icon: 'fa-envelope', color: 'bg-purple-50 text-purple-600', title: 'Email', val: 'hello@pixelandcraft.co.uk', sub: 'We reply within 24 hours', href: 'mailto:hello@pixelandcraft.co.uk' },
+          { icon: 'fa-envelope', color: 'bg-purple-50 text-purple-600', title: 'Email', val: 'riaz.darwinboyd@gmail.com', sub: 'We reply within 24 hours', href: 'mailto:riaz.darwinboyd@gmail.com' },
           { icon: 'fa-location-dot', color: 'bg-pink-50 text-pink-600', title: 'Office', val: 'Ipswich, Suffolk', sub: 'IP1 3PH', href: '#' },
         ].map(c => `
           <a href="${c.href}" class="flex items-start gap-4 bg-white rounded-2xl p-5 border border-gray-100 shadow-sm card-hover block">
@@ -1198,15 +1198,15 @@ const ContactPage = () => `
 // ROUTES
 // ═══════════════════════════════════════════════════════════════════════════════
 app.get('/', (c) => {
-  return c.html(Layout({ children: HomePage(), title: 'Pixel & Craft | Ipswich Web Design Agency' }))
+  return c.html(Layout({ children: HomePage(), title: 'Obsidian Digital | Ipswich Web Design Agency' }))
 })
 
 app.get('/about', (c) => {
-  return c.html(Layout({ children: AboutPage(), title: 'About Us | Pixel & Craft Ipswich' }))
+  return c.html(Layout({ children: AboutPage(), title: 'About Us | Obsidian Digital Ipswich' }))
 })
 
 app.get('/contact', (c) => {
-  return c.html(Layout({ children: ContactPage(), title: 'Contact Us | Pixel & Craft Ipswich' }))
+  return c.html(Layout({ children: ContactPage(), title: 'Contact Us | Obsidian Digital Ipswich' }))
 })
 
 // API: contact form submission
