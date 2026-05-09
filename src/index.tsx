@@ -323,14 +323,14 @@ const Footer = () => `
         </ul>
         <div class="mt-6 p-4 rounded-xl bg-white/3 border border-white/5">
           <p class="text-gray-400 text-xs">📍 Ipswich, Suffolk</p>
-          <p class="text-gray-400 text-xs mt-1">📞 01473 000 000</p>
+          <p class="text-gray-400 text-xs mt-1">📞 07518 009604</p>
           <p class="text-gray-400 text-xs mt-1">✉️ riaz.darwinboyd@gmail.com</p>
         </div>
       </div>
     </div>
 
     <div class="border-t border-white/5 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p class="text-gray-500 text-sm">© 2024 Obsidian Digital. All rights reserved.</p>
+      <p class="text-gray-500 text-sm">© 2025 Obsidian Digital. All rights reserved.</p>
       <p class="text-gray-500 text-sm">Proudly designed & built in <span class="text-brand-400">Ipswich, Suffolk</span> 🏴󠁧󠁢󠁥󠁮󠁧󠁿</p>
     </div>
   </div>
@@ -394,9 +394,9 @@ const HomePage = () => `
             <span class="text-gray-400 text-sm ml-1">5.0 on Google</span>
           </div>
           <div class="w-px h-4 bg-white/10"></div>
-          <span class="text-gray-400 text-sm"><span class="text-white font-semibold">50+</span> Projects Delivered</span>
+          <span class="text-gray-400 text-sm"><span class="text-white font-semibold">Affordable</span> Pricing</span>
           <div class="w-px h-4 bg-white/10"></div>
-          <span class="text-gray-400 text-sm"><span class="text-white font-semibold">8 Years</span> Experience</span>
+          <span class="text-gray-400 text-sm"><span class="text-white font-semibold">Static Sites</span> Specialist</span>
         </div>
       </div>
 
@@ -588,96 +588,75 @@ const HomePage = () => `
       </a>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
-      ${[
-        { name: 'OrwellHomes', type: 'Estate Agency', tag: 'E-Commerce', color: 'from-blue-600 to-indigo-700', icon: 'fa-house', result: '+312% Enquiries' },
-        { name: 'CraftBrew Co.', type: 'Food & Drink', tag: 'Web Design', color: 'from-amber-500 to-orange-600', icon: 'fa-beer-mug-empty', result: '+189% Sales' },
-        { name: 'SuffolkLaw', type: 'Legal Services', tag: 'Branding', color: 'from-slate-700 to-gray-900', icon: 'fa-scale-balanced', result: '+95% Leads' },
-        { name: 'NovaSolar', type: 'Renewables', tag: 'Web Dev', color: 'from-emerald-500 to-teal-600', icon: 'fa-solar-panel', result: '+220% Traffic' },
-        { name: 'Ipswich Eats', type: 'Restaurant', tag: 'Booking System', color: 'from-rose-500 to-pink-600', icon: 'fa-utensils', result: '+410% Bookings' },
-        { name: 'AquaSuffolk', type: 'Fitness', tag: 'E-Commerce', color: 'from-cyan-500 to-blue-600', icon: 'fa-droplet', result: '+158% Members' },
-      ].map((p, i) => `
-        <div class="group card-hover rounded-2xl overflow-hidden border border-gray-100 animate-on-scroll" style="animation-delay: ${i * 80}ms">
-          <div class="h-48 bg-gradient-to-br ${p.color} relative overflow-hidden flex items-center justify-center">
-            <i class="fas ${p.icon} text-white/20 text-8xl absolute -right-4 -bottom-4"></i>
-            <div class="relative z-10 text-center">
-              <div class="w-14 h-14 bg-white/15 rounded-2xl flex items-center justify-center mx-auto mb-3 backdrop-blur-sm">
-                <i class="fas ${p.icon} text-white text-2xl"></i>
-              </div>
-              <div class="bg-white/15 backdrop-blur-sm rounded-full px-3 py-1 text-white text-xs font-semibold inline-block">${p.tag}</div>
-            </div>
-          </div>
-          <div class="p-6 bg-white">
-            <div class="flex items-start justify-between mb-2">
-              <div>
-                <h3 class="font-display font-bold text-gray-900">${p.name}</h3>
-                <p class="text-gray-400 text-sm">${p.type}</p>
-              </div>
-              <span class="bg-green-50 text-green-600 text-xs font-semibold px-3 py-1 rounded-full">${p.result}</span>
-            </div>
-            <a href="/contact" class="inline-flex items-center gap-1.5 text-brand-600 text-sm font-semibold mt-3 group-hover:gap-2.5 transition-all">
-              View case study <i class="fas fa-arrow-right text-xs"></i>
-            </a>
-          </div>
+    <!-- Portfolio placeholder - ready for real client projects -->
+    <div class="max-w-2xl mx-auto text-center animate-on-scroll">
+      <div class="bg-white border-2 border-dashed border-brand-200 rounded-3xl p-14">
+        <div class="w-16 h-16 mx-auto bg-brand-50 rounded-2xl flex items-center justify-center mb-5">
+          <i class="fas fa-images text-brand-400 text-2xl"></i>
         </div>
-      `).join('')}
+        <h3 class="font-display font-bold text-xl text-gray-900 mb-3">Projects Coming Soon</h3>
+        <p class="text-gray-500 text-sm leading-relaxed mb-6">We've just launched and are actively taking on our first clients. Check back soon — this section will be filled with real work for real Ipswich businesses.</p>
+        <a href="/contact" class="btn-primary inline-flex items-center gap-2 text-white font-semibold px-6 py-3 rounded-xl text-sm">
+          Be Our First Client <i class="fas fa-arrow-right text-xs"></i>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- STATS -->
+<!-- WHY STATIC WEBSITES -->
 <section class="hero-gradient py-24">
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+    <div class="text-center mb-12 animate-on-scroll">
+      <h2 class="font-display font-extrabold text-3xl lg:text-4xl text-white mb-4 tracking-tight">Why a <span class="gradient-text">Static Website?</span></h2>
+      <p class="text-gray-400 max-w-xl mx-auto text-sm leading-relaxed">Static websites are the smartest choice for most small businesses — faster, cheaper, and more secure than bloated CMS platforms like WordPress.</p>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
       ${[
-        { value: '50+', label: 'Projects Delivered' },
-        { value: '8', label: 'Years in Business' },
-        { value: '98%', label: 'Client Retention' },
-        { value: '£2M+', label: 'Revenue Generated' },
+        { icon: 'fa-bolt', value: 'Lightning Fast', label: 'No databases or server processing — pages load instantly for every visitor.' },
+        { icon: 'fa-shield-halved', value: 'More Secure', label: 'No login pages or plugins means far fewer vulnerabilities to worry about.' },
+        { icon: 'fa-sterling-sign', value: 'Affordable', label: 'Lower build costs and minimal ongoing hosting fees — perfect for small businesses.' },
+        { icon: 'fa-wrench', value: 'Low Maintenance', label: 'No CMS updates, patches or plugin headaches. Set it and forget it.' },
       ].map((s, i) => `
-        <div class="animate-on-scroll" style="animation-delay: ${i * 100}ms">
-          <div class="font-display font-extrabold text-5xl text-white mb-2 stat-counter">${s.value}</div>
-          <div class="text-gray-400 text-sm">${s.label}</div>
+        <div class="animate-on-scroll bg-white/5 border border-white/10 rounded-2xl p-6 text-center" style="animation-delay: ${i * 100}ms">
+          <div class="w-12 h-12 mx-auto bg-brand-500/20 rounded-xl flex items-center justify-center mb-4">
+            <i class="fas ${s.icon} text-brand-300 text-lg"></i>
+          </div>
+          <div class="font-display font-bold text-white text-base mb-2">${s.value}</div>
+          <div class="text-gray-400 text-xs leading-relaxed">${s.label}</div>
         </div>
       `).join('')}
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
+<!-- REVIEWS PLACEHOLDER -->
 <section class="section-subtle py-24">
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
     <div class="text-center mb-14 animate-on-scroll">
       <div class="inline-flex items-center gap-2 tag-pill rounded-full px-4 py-1.5 mb-5">
-        <span class="text-brand-600 text-sm font-medium">Testimonials</span>
+        <span class="text-brand-600 text-sm font-medium">Reviews</span>
       </div>
       <h2 class="font-display font-extrabold text-4xl lg:text-5xl text-gray-900 tracking-tight">
-        What Our Clients <span class="gradient-text">Say</span>
+        Client Reviews <span class="gradient-text">Coming Soon</span>
       </h2>
+      <p class="text-gray-500 text-base mt-5 max-w-xl mx-auto">We're just getting started — be one of our first clients and help us build our reputation in Ipswich!</p>
     </div>
-
-    <div class="grid md:grid-cols-3 gap-7">
-      ${[
-        { quote: 'Obsidian Digital completely transformed our online presence. Within 3 months of our new website launching, our enquiries had more than tripled. Absolutely phenomenal work.', name: 'Sarah Mitchell', role: 'Director, OrwellHomes', stars: 5 },
-        { quote: 'I was blown away by the quality of the design and how quickly Riaz understood our brand. Professional, creative, and genuinely cares about results. Would recommend to anyone.', name: 'James Thornton', role: 'Owner, CraftBrew Co.', stars: 5 },
-        { quote: 'Our new website looks incredible and performs even better. Our Google rankings shot up and we\'re getting far more qualified leads than ever before. Highly recommend!', name: 'Emma Richards', role: 'Partner, SuffolkLaw', stars: 5 },
-      ].map((t, i) => `
-        <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm card-hover animate-on-scroll" style="animation-delay: ${i * 100}ms">
-          <div class="flex mb-4">
-            ${[1,2,3,4,5].map(() => '<i class="fas fa-star text-yellow-400 text-sm"></i>').join('')}
-          </div>
-          <p class="text-gray-600 text-sm leading-relaxed mb-6 italic">"${t.quote}"</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-brand-400 to-purple-500 flex items-center justify-center text-white font-bold text-sm">
-              ${t.name.charAt(0)}
-            </div>
-            <div>
-              <div class="font-semibold text-gray-900 text-sm">${t.name}</div>
-              <div class="text-gray-400 text-xs">${t.role}</div>
-            </div>
-          </div>
+    <div class="max-w-2xl mx-auto animate-on-scroll">
+      <div class="bg-white border-2 border-dashed border-brand-200 rounded-3xl p-12 text-center">
+        <div class="flex justify-center gap-1 mb-5">
+          <i class="fas fa-star text-gray-200 text-3xl"></i>
+          <i class="fas fa-star text-gray-200 text-3xl"></i>
+          <i class="fas fa-star text-gray-200 text-3xl"></i>
+          <i class="fas fa-star text-gray-200 text-3xl"></i>
+          <i class="fas fa-star text-gray-200 text-3xl"></i>
         </div>
-      `).join('')}
+        <h3 class="font-display font-bold text-xl text-gray-900 mb-3">Your Review Could Be First</h3>
+        <p class="text-gray-500 text-sm leading-relaxed mb-6">We're new, hungry, and ready to deliver exceptional work. Get in touch today — if we do a great job, we'd love for you to share your experience.</p>
+        <a href="/contact" class="btn-primary inline-flex items-center gap-2 text-white font-semibold px-6 py-3 rounded-xl text-sm">
+          Work With Us <i class="fas fa-arrow-right text-xs"></i>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -696,8 +675,8 @@ const HomePage = () => `
         <a href="/contact" class="btn-primary inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-xl text-base">
           Get Your Free Quote <i class="fas fa-arrow-right text-sm"></i>
         </a>
-        <a href="tel:01473000000" class="btn-outline inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-xl text-base">
-          <i class="fas fa-phone text-brand-400 text-sm"></i> 01473 000 000
+        <a href="tel:07518009604" class="btn-outline inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-xl text-base">
+          <i class="fas fa-phone text-brand-400 text-sm"></i> 07518 009604
         </a>
       </div>
     </div>
@@ -724,10 +703,10 @@ const AboutPage = () => `
       <span class="text-brand-300 text-sm font-medium">About Obsidian Digital</span>
     </div>
     <h1 class="font-display font-extrabold text-5xl lg:text-6xl text-white leading-tight mb-6 tracking-tight">
-      We're a Creative Agency <br class="hidden md:block"/><span class="gradient-text">With a Purpose</span>
+      Fresh Agency, <br class="hidden md:block"/><span class="gradient-text">Serious Standards</span>
     </h1>
     <p class="text-gray-400 text-xl max-w-2xl mx-auto">
-      Founded in Ipswich by a Computer Science student with a passion for design — building digital experiences that actually move the needle for local businesses.
+      A brand new web design agency founded in Ipswich by a Computer Science student with a real passion for clean design and building sites that work for local businesses.
     </p>
   </div>
   <div class="absolute bottom-0 left-0 right-0">
@@ -746,16 +725,16 @@ const AboutPage = () => `
           <span class="text-brand-600 text-sm font-medium">Our Story</span>
         </div>
         <h2 class="font-display font-extrabold text-4xl text-gray-900 mb-6 tracking-tight leading-tight">
-          Built in Ipswich, <span class="gradient-text">Driven by Passion</span>
+          New Agency, <span class="gradient-text">Real Passion</span>
         </h2>
         <p class="text-gray-500 leading-relaxed mb-5">
-          Obsidian Digital was founded by Riaz Darwin-Boyd, a Computer Science student based in Ipswich with a genuine passion for design, code, and building things that work. Frustrated by the overpriced, generic websites being sold to local businesses, Riaz set out to offer something better — websites that are beautifully crafted, technically sharp, and built to convert.
+          Obsidian Digital was founded in 2025 by Riaz Darwin-Boyd, a Computer Science student based in Ipswich with a genuine passion for design, code, and building things that work. Frustrated by the overpriced, generic websites being sold to local businesses, Riaz set out to offer something better — beautifully crafted, fast static websites at prices that make sense for small businesses.
         </p>
         <p class="text-gray-500 leading-relaxed mb-5">
-          Combining academic knowledge in computer science with hands-on real-world projects, Obsidian Digital brings a fresh, modern perspective to web design. Every project gets the same level of care, precision and attention to detail — whether it's a portfolio site or a full e-commerce store.
+          We specialise exclusively in static websites — no bloated WordPress installs, no unnecessary complexity. Just clean, fast, professional websites hand-built to represent your business at its best. Every project gets the same care and attention to detail, from the first conversation to the final launch.
         </p>
         <p class="text-gray-500 leading-relaxed mb-8">
-          Proudly Ipswich-based and passionate about helping local Suffolk businesses thrive online. If you want a website that genuinely works for your business, you're in the right place.
+          We're just getting started, and that means every client matters enormously to us. You won't be a ticket number — you'll work directly with Riaz and get genuinely personal service throughout.
         </p>
         <a href="/contact" class="btn-primary inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-xl">
           Work With Us <i class="fas fa-arrow-right text-sm"></i>
@@ -769,22 +748,22 @@ const AboutPage = () => `
           <div class="relative bg-white rounded-3xl border border-gray-100 shadow-xl overflow-hidden p-8">
             <div class="grid grid-cols-2 gap-4 mb-4">
               <div class="bg-gradient-to-br from-brand-500 to-purple-600 rounded-2xl h-36 flex flex-col items-center justify-center text-white">
-                <span class="font-display font-extrabold text-4xl">CS</span>
-                <span class="text-sm opacity-80">Graduate</span>
+                <i class="fas fa-laptop-code text-4xl mb-2"></i>
+                <span class="text-sm opacity-80">CS Student</span>
               </div>
               <div class="bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl h-36 flex flex-col items-center justify-center text-white">
-                <span class="font-display font-extrabold text-4xl">50+</span>
-                <span class="text-sm opacity-80">Projects</span>
+                <i class="fas fa-location-dot text-4xl mb-2"></i>
+                <span class="text-sm opacity-80">Ipswich Based</span>
               </div>
             </div>
             <div class="grid grid-cols-2 gap-4">
               <div class="bg-gray-50 rounded-2xl p-5">
-                <div class="text-2xl font-display font-bold text-gray-900">98%</div>
-                <div class="text-xs text-gray-500">Client Retention</div>
+                <div class="text-2xl font-display font-bold text-gray-900">2025</div>
+                <div class="text-xs text-gray-500">Founded</div>
               </div>
               <div class="bg-gray-50 rounded-2xl p-5">
-                <div class="text-2xl font-display font-bold text-gray-900">£2M+</div>
-                <div class="text-xs text-gray-500">Revenue Generated</div>
+                <div class="text-2xl font-display font-bold text-gray-900">Static</div>
+                <div class="text-xs text-gray-500">Sites Only</div>
               </div>
             </div>
           </div>
@@ -793,10 +772,10 @@ const AboutPage = () => `
         <!-- Award badge -->
         <div class="absolute -top-4 -right-4 bg-white border border-gray-100 rounded-2xl px-4 py-3 shadow-lg">
           <div class="flex items-center gap-2">
-            <i class="fas fa-trophy text-yellow-400"></i>
-            <span class="text-xs font-semibold text-gray-700">Suffolk Business Awards</span>
+            <span class="text-lg">🚀</span>
+            <span class="text-xs font-semibold text-gray-700">Now Open for Business</span>
           </div>
-          <div class="text-xs text-gray-400 mt-0.5">Best Digital Agency 2023</div>
+          <div class="text-xs text-gray-400 mt-0.5">Accepting first clients — 2025</div>
         </div>
       </div>
     </div>
@@ -846,14 +825,11 @@ const AboutPage = () => `
       </h2>
     </div>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
+    <div class="flex justify-center">
       ${[
-        { name: 'Riaz Darwin-Boyd', role: 'Founder & Lead Developer', color: 'from-brand-400 to-purple-500', icon: 'fa-laptop-code', skills: ['Web Design', 'TypeScript', 'React'] },
-        { name: 'Creative Direction', role: 'UI & Visual Design', color: 'from-pink-400 to-rose-500', icon: 'fa-pen-ruler', skills: ['Figma', 'Branding', 'Prototyping'] },
-        { name: 'Development', role: 'Build & Performance', color: 'from-cyan-400 to-blue-500', icon: 'fa-code', skills: ['Performance', 'SEO', 'Accessibility'] },
-        { name: 'Growth', role: 'SEO & Digital Marketing', color: 'from-green-400 to-emerald-500', icon: 'fa-magnifying-glass-chart', skills: ['SEO', 'Analytics', 'Conversions'] },
+        { name: 'Riaz Darwin-Boyd', role: 'Founder & Developer', color: 'from-brand-400 to-purple-500', icon: 'fa-laptop-code', skills: ['Web Design', 'HTML & CSS', 'JavaScript'] },
       ].map((m, i) => `
-        <div class="group card-hover text-center animate-on-scroll" style="animation-delay: ${i * 80}ms">
+        <div class="group card-hover text-center animate-on-scroll max-w-xs w-full" style="animation-delay: ${i * 80}ms">
           <div class="w-24 h-24 mx-auto bg-gradient-to-br ${m.color} rounded-2xl flex items-center justify-center mb-5 shadow-lg group-hover:shadow-xl transition-shadow">
             <i class="fas ${m.icon} text-white text-3xl"></i>
           </div>
@@ -881,12 +857,12 @@ const AboutPage = () => `
         </h2>
         <div class="space-y-5">
           ${[
-            { icon: 'fa-check-circle', text: 'Local agency with national-level quality — you\'ll always speak to the person actually doing the work.' },
-            { icon: 'fa-check-circle', text: 'Fixed-price projects with no hidden extras. What we quote is what you pay.' },
-            { icon: 'fa-check-circle', text: 'All websites come with full training so you can manage your site with confidence.' },
-            { icon: 'fa-check-circle', text: 'We\'re obsessed with results — not just pretty designs. Every element has a purpose.' },
-            { icon: 'fa-check-circle', text: 'Ongoing support and maintenance packages available to keep your site healthy.' },
-            { icon: 'fa-check-circle', text: 'All websites are fully accessible, GDPR-compliant, and optimised for Google.' },
+            { icon: 'fa-check-circle', text: 'You work directly with Riaz — not an account manager. Direct, personal communication every step of the way.' },
+            { icon: 'fa-check-circle', text: 'Fixed, transparent pricing. No hidden costs, no vague quotes — what we say is what you pay.' },
+            { icon: 'fa-check-circle', text: 'Specialising in static websites means faster, more secure sites at a fraction of the cost of WordPress.' },
+            { icon: 'fa-check-circle', text: 'Fresh and hungry — every client matters enormously to us as a brand new agency.' },
+            { icon: 'fa-check-circle', text: 'Fast turnaround — most static sites delivered within 1–2 weeks of receiving your content.' },
+            { icon: 'fa-check-circle', text: 'All websites are mobile-responsive, GDPR-friendly, and built with SEO best practices from day one.' },
           ].map(item => `
             <div class="flex items-start gap-4">
               <i class="fas ${item.icon} text-brand-500 mt-0.5 flex-shrink-0"></i>
@@ -898,10 +874,10 @@ const AboutPage = () => `
 
       <div class="grid grid-cols-2 gap-5 animate-on-scroll">
         ${[
-          { label: 'Average project delivery', value: '4 weeks', icon: 'fa-clock', color: 'bg-brand-50 border-brand-100' },
-          { label: 'Client satisfaction rate', value: '5.0 ★', icon: 'fa-star', color: 'bg-yellow-50 border-yellow-100' },
-          { label: 'Websites built', value: '50+', icon: 'fa-globe', color: 'bg-green-50 border-green-100' },
-          { label: 'Years in Ipswich', value: '8 Years', icon: 'fa-location-dot', color: 'bg-purple-50 border-purple-100' },
+          { label: 'Typical turnaround time', value: '1–2 wks', icon: 'fa-clock', color: 'bg-brand-50 border-brand-100' },
+          { label: 'Satisfaction guarantee', value: '100%', icon: 'fa-star', color: 'bg-yellow-50 border-yellow-100' },
+          { label: 'Speciality', value: 'Static', icon: 'fa-globe', color: 'bg-green-50 border-green-100' },
+          { label: 'Founded in Ipswich', value: '2025', icon: 'fa-location-dot', color: 'bg-purple-50 border-purple-100' },
         ].map(s => `
           <div class="${s.color} border rounded-2xl p-6 flex flex-col gap-3">
             <i class="fas ${s.icon} text-xl text-gray-600"></i>
@@ -975,7 +951,7 @@ const ContactPage = () => `
         </div>
 
         ${[
-          { icon: 'fa-phone', color: 'bg-brand-50 text-brand-600', title: 'Phone', val: '01473 000 000', sub: 'Mon – Fri, 9am – 5:30pm', href: 'tel:01473000000' },
+          { icon: 'fa-phone', color: 'bg-brand-50 text-brand-600', title: 'Phone', val: '07518 009604', sub: 'Mon – Fri, 9am – 6pm', href: 'tel:07518009604' },
           { icon: 'fa-envelope', color: 'bg-purple-50 text-purple-600', title: 'Email', val: 'riaz.darwinboyd@gmail.com', sub: 'We reply within 24 hours', href: 'mailto:riaz.darwinboyd@gmail.com' },
           { icon: 'fa-location-dot', color: 'bg-pink-50 text-pink-600', title: 'Office', val: 'Ipswich, Suffolk', sub: 'IP1 3PH', href: '#' },
         ].map(c => `
@@ -1143,8 +1119,8 @@ const ContactPage = () => `
 
     <div class="space-y-4 animate-on-scroll">
       ${[
-        { q: 'How much does a website cost?', a: 'Every project is unique, but most websites for small-to-medium businesses fall between £1,500 and £8,000. We\'ll give you a fixed-price quote after an initial call — no surprises.' },
-        { q: 'How long does it take to build a website?', a: 'A typical website takes 4–8 weeks from briefing to launch. More complex projects like e-commerce stores may take longer. We\'ll give you a clear timeline upfront.' },
+        { q: 'How much does a website cost?', a: 'We specialise in affordable static websites for small businesses, so our prices are kept honest and transparent. Every project is different so get in touch for a free quote — we\'ll tell you exactly what it costs upfront with no surprises.' },
+        { q: 'How long does it take to build a website?', a: 'Most static websites are delivered within 1–2 weeks once we have all your content and requirements. We always agree a clear timeline before starting work.' },
         { q: 'Will I be able to update the website myself?', a: 'Absolutely. We build all our websites with easy-to-use content management systems and provide full training so you can make updates without needing us.' },
         { q: 'Do you work with businesses outside of Ipswich?', a: 'Yes! While we\'re proud to be an Ipswich-based agency, we work with clients across the UK. Everything can be handled remotely with regular video calls.' },
         { q: 'What happens after the website launches?', a: 'We offer ongoing support and maintenance packages to keep your site fast, secure, and up to date. We\'re always just an email away.' },
